@@ -61,7 +61,7 @@ def download_hue():
   Execute('mv {0}-* {0}'.format(params.hue_dir))
   Execute('chown -R {0}:{1} {2}'.format(params.hue_user,params.hue_group,params.hue_dir))
   Execute('ln -s {0} /usr/hdp/current/hue-server'.format(params.hue_dir))
- # Execute('make {0}/apps'.format(params.hue_dir))
+  # Execute('make {0}/apps'.format(params.hue_dir))
   Logger.info("Hue Service is installed")
 
 def add_hdfs_configuration(if_ranger=False, security_enabled=False):

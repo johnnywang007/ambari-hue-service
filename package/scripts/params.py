@@ -29,7 +29,7 @@ config = Script.get_config()
 tmp_dir = Script.get_tmp_dir()
 stack_root = Script.get_stack_root()
 # Hue download url
-download_url = 'http://sh05-hdp3-manage001/hue/hue-4.6.0.tgz'
+download_url = 'http://master/HDP/centos7/3.1.4.0-315/hue/hue-4.6.0.tgz'
 # New Cluster Stack Version that is defined during the RESTART of a Rolling Upgrade
 version = default("/commandParams/version", None)
 stack_name = default("/hostLevelParams/stack_name", None)
